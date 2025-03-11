@@ -1862,7 +1862,6 @@ GameObject:
   m_Component:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
-  - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
@@ -1871,14 +1870,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &519420029
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1983,8 +1974,8 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.007269027, y: 0.02975969, z: -10}
+  m_LocalScale: {x: 0.7269027, y: 0.74399227, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5569061529305582761}
@@ -9012,7 +9003,7 @@ PrefabInstance:
     - target: {fileID: 1716966471610768779, guid: aa8950c2bdd655a47b8172eaa16ed8b6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 72891b1571aba3247b2dbb4cb333f807, type: 3}
+      objectReference: {fileID: 21300000, guid: 8244db83d7322b44599e9f6addc39334, type: 3}
     - target: {fileID: 1716966471610768779, guid: aa8950c2bdd655a47b8172eaa16ed8b6, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -9030,12 +9021,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5895020388213137406, guid: aa8950c2bdd655a47b8172eaa16ed8b6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3757
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895020388213137406, guid: aa8950c2bdd655a47b8172eaa16ed8b6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3441
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895020388213137406, guid: aa8950c2bdd655a47b8172eaa16ed8b6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5895020388213137406, guid: aa8950c2bdd655a47b8172eaa16ed8b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 5895020388213137406, guid: aa8950c2bdd655a47b8172eaa16ed8b6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9097,6 +9096,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9158057431257762315, guid: aa8950c2bdd655a47b8172eaa16ed8b6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5569061529305582762}
+    - targetCorrespondingSourceObject: {fileID: 9158057431257762315, guid: aa8950c2bdd655a47b8172eaa16ed8b6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5569061529305582763}
   m_SourcePrefab: {fileID: 100100000, guid: aa8950c2bdd655a47b8172eaa16ed8b6, type: 3}
 --- !u!1 &5569061529305582757 stripped
 GameObject:
@@ -9162,8 +9164,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0036123395, y: -0.021673918}
-  m_Size: {x: 1.7296916, y: 2.8958592}
+  m_Offset: {x: -0.0022256374, y: 0.0308671}
+  m_Size: {x: 1.157579, y: 2.090231}
   m_Direction: 0
 --- !u!4 &5569061529305582761 stripped
 Transform:
@@ -9183,7 +9185,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 10
-  forcaPulo: 8
+  focaPulo: 10
+  noChao: 0
+  andando: 0
+--- !u!95 &5569061529305582763
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5569061529305582757}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9188d25d45e717c46a17da6462e0e3c2, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
